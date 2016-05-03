@@ -1,0 +1,11 @@
+Requisitos:
+
+-Inserir uma quantidade de no maximo 20 numeros
+
+-Mostrar quantos sao pares
+
+-Mostrar quantos sao impares
+
+-Mostar quantos sao primos
+
+-Mostrar o resultado da soma de todos eles
