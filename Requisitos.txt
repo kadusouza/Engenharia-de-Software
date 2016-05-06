@@ -1,11 +1,13 @@
 Requisitos:
 
--Inserir uma quantidade de no maximo 20 numeros
+  -Inserir uma quantidade de no maximo 20 numeros
 
--Mostrar quantos sao pares
+  -Contar quantos sao pares
 
--Mostrar quantos sao impares
+  -Contar quantos sao impares
 
--Mostar quantos sao primos
+  -Contar quantos sao primos
 
--Mostrar o resultado da soma de todos eles
+  -Somar todos eles
+
+  -Exibir os resultados dos procedimentos realizados
