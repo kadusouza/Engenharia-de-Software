@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int n, i, j, vet[n];
+	int n, i;
 	int pares, impares, primos, soma;
 	int c = 2;
 	i = 0;
@@ -17,30 +17,30 @@ int main() {
 		printf("Quantidade de numeros invalida!");
 		return 0;
 	}
+//Declaração do vetor
+	int  vet[n];
 //Insercao dos numeros desejados
 	printf("Digitar os numeros (digete-o e pressione enter):");
 	for(i=0; i < n; i++) {
 		scanf("%d", &vet[i]);
 	}
 //Analise dos nuemros inseridos
-	j = 0;
 	for(i=0; i < n; i++) {
 //Contagem de quantos sao Pares e/ou Impares
-		if((vet[j] % 2) == 0)
+		if((vet[i] % 2) == 0)
 			pares++;
 		else
 			impares++;
 //Identificacao de quantos sao primos	
-		for ( c = 2; c <= (vet[j]-1); c++) {
+		for ( c = 2; c <= (vet[i]-1); c++) {
 			if(vet[i] % c == 0) {
 				break;
 			}
 		}
-		if (c == vet[j])
+		if (c == vet[i])
 			primos++;
 //Soma total dos numeros
-		soma = soma + vet[j];
-		j++;
+		soma = soma + vet[i];
 	}
 	printf("---------------------------------\n");
 	printf("	%d sao pares\n", pares);
