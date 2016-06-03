@@ -11,18 +11,22 @@ int main() {
 	primos = 0;
 	soma =0;
 //Quantidade de numeros a serem inseridos
-	printf("Insira a quantidade de nuemros (maximo=20) a serem inseridos:\n");
+	printf("Insira a quantidade de nuemros inteiros a serem inseridos (maximo=20):\n");
 	scanf("%d", &n);
 	if ((n < 1) || (n > 20)) {
 		printf("Quantidade de numeros invalida!");
 		return 0;
 	}
-//DeclaraÃ§Ã£o do vetor
+//Declaração do vetor
 	int  vet[n];
 //Insercao dos numeros desejados
 	printf("Digitar os numeros (digete-o e pressione enter):");
 	for(i=0; i < n; i++) {
 		scanf("%d", &vet[i]);
+		if (vet[i] < 0) {
+			printf("Numero invalido! Somente numeros inteiros");
+			return 0;
+		}
 	}
 //Analise dos nuemros inseridos
 	for(i=0; i < n; i++) {
