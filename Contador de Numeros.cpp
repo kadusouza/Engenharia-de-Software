@@ -20,11 +20,11 @@ int main() {
 //Declaração do vetor
 	int  vet[n];
 //Insercao dos numeros desejados
-	printf("Digitar os numeros (digete-o e pressione enter):");
+	printf("Digitar os numeros e pressionar enter (se digitar um numero com casas decimais so o numero antes das casas sera reconhecido):");
 	for(i=0; i < n; i++) {
 		scanf("%d", &vet[i]);
-		if (vet[i] < 0) {
-			printf("Numero invalido! Somente numeros inteiros");
+		if (vet[i] < 0 ) {
+			printf("Numero invalido! Somente numeros inteiros naturais");
 			return 0;
 		}
 	}
