@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int n, i;
+	int n, i, altint, altfloat;
 	int pares, impares, primos, soma;
 	int c = 2;
 	i = 0;
@@ -10,6 +10,8 @@ int main() {
 	pares = 0;
 	primos = 0;
 	soma =0;
+	altint = 0;
+	altfloat =0;
 //Quantidade de numeros a serem inseridos
 	printf("Insira a quantidade de nuemros inteiros a serem inseridos (maximo=20):\n");
 	scanf("%d", &n);
@@ -19,15 +21,18 @@ int main() {
 	}
 //Declaração do vetor
 	int  vet[n];
+	float vetalt[n];
 //Insercao dos numeros desejados
-	printf("Digitar os numeros e pressionar enter (se digitar um numero com casas decimais so o numero antes das casas sera reconhecido):");
+	printf("Digitar os numeros e pressionar enter :");
 	for(i=0; i < n; i++) {
-		scanf("%d", &vet[i]);
-		if (vet[i] < 0 ) {
+		scanf("%f", &vetalt[i]);
+		vet[i] = vetalt[i];
+		if ((vetalt[i] < 0 ) || (vet[i] != vetalt[i])) {
 			printf("Numero invalido! Somente numeros inteiros naturais");
 			return 0;
 		}
 	}
+
 //Analise dos nuemros inseridos
 	for(i=0; i < n; i++) {
 //Contagem de quantos sao Pares e/ou Impares
